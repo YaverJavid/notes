@@ -1,0 +1,154 @@
+:root{
+--secondary:#3C3C3C;
+--primary:#1D1D1DD4;
+--tools:whitesmoke;
+--button:white;
+--text:white;
+--text2:gray;
+--text3:black;
+/*   --secondary:white;
+--primary:#D0D1DAD4;
+--tools:whitesmoke;
+--button: blue;
+--text:blue;
+--text2:gray;
+--text3:black */
+}
+body {
+  text-align: center;
+  background: var(--secondary);
+}
+
+*::placeholder{
+  color: var(--text2)
+}
+
+.input {
+  height: 8vw;
+  margin-left: 5vw;
+  border: none;
+  width: 45vw;
+  font-size: 5.5vw;
+  background: transparent;
+  outline-color: transparent;
+  border-bottom: 1px solid gray;
+  color: var(--text)
+}
+
+#heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  border-radius: 4vw;
+  color: var(--text);
+  opacity: 1;
+  margin-bottom: 2vw;
+  padding: 3vw;
+}
+
+
+
+#write {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--primary);
+  opacity: 60;
+  padding: 5vw;
+  border-radius: 4vw;
+
+}
+
+#title {
+  margin: 4vw;
+  margin-left: 0;
+}
+
+#body {
+  height: 85vw;
+  width: 94.5%;
+  align-self: flex-strech;
+  border-radius: 1.5vw;
+  font-size: 5.5vw;
+  border: none;
+  background: #00000000;
+  color: var(--text);
+  outline-color: transparent
+
+}
+
+button {
+  position: fixed;
+  bottom: 10vw;
+  right: 10vw;
+  border-radius: 50vw;
+  border: none;
+  padding: 3vw;
+  width: 15vw;
+  height: 15vw;
+  text-align: center;
+  font-size: 9vw;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:var(--text3);
+}
+
+button>a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+input[type=button]{
+  align-self: center;
+  padding: 3vw 6vw;
+  margin: 4vw 0;
+  margin-bottom: 0;
+  border-radius: 1.5vw;
+  border: none;
+  font-size: 5vw;
+  background: #ffffff;
+}
+
+#notes{
+  text-align: left;
+  padding: 5vw 0
+}
+.note{
+  padding: 5vw;
+  background:var(--primary);
+  border-radius: 3vw;
+  color: var(--text);
+  margin: 5vw 0;
+}
+
+#tools{
+  background: var(--primary);
+  border-radius: 2vw;
+  margin-top: 10vw;
+  padding: 5vw 0;
+}
+
+#deleteAll{
+  margin: 0 0;
+}
+
+.note > span{
+  color: var(--text2);
+}
+
+.note > h3{
+  margin-bottom: 0.3vw
+}
+
+.modify-button{
+  color: var(--tools);
+  text-decoration: underline;
+  display: block;
+}
+
+.note,#tools,#write,#heading{
+}
